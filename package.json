@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "description": "A simple React app for finding React boilerplates / starter kits",
+  "scripts": {
+    "build": "npm run build-packages-lookup",
+    "build-packages-lookup": "babel-node _scripts/build-packages-lookup",
+    "eslint": "eslint .",
+    "lint": "npm run eslint",
+    "validate": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benmvp/react-boilerplate-finder.git"
+  },
+  "author": "Ben Ilegbodu <ben@benmvp.com> (http://www.benmvp.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benmvp/react-boilerplate-finder/issues"
+  },
+  "homepage": "https://github.com/benmvp/react-boilerplate-finder#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "core-js": "^2.4.0",
+    "lazy.js": "^0.4.2",
+    "material-ui": "^0.15.0",
+    "node-fetch": "^1.5.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
+    "react-router-redux": "^4.0.4",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2",
+    "semver": "^5.1.0",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-cli": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.9.1",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.3.0",
+    "eslint": "^2.11.1",
+    "eslint-config-benmvp": "^4.0.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "exports-loader": "^0.6.3",
+    "imports-loader": "^0.6.5",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "node-sass": "^3.7.0",
+    "postcss-loader": "^0.9.1",
+    "pre-commit": "^1.1.3",
+    "react-hot-loader": "^1.3.0",
+    "redux-devtools": "^3.3.1",
+    "redux-logger": "^2.6.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "pre-commit": [
+    "validate"
+  ]
+}
