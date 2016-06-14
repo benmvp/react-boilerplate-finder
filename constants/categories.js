@@ -56,11 +56,12 @@ export default {
         ],
         multi: true
     },
-    es6Shim: {
-        label: 'ES6 Shims',
+    esShim: {
+        label: 'ES Shims',
         packages: [
             'core-js',
             'es6-promise',
+            'babel-polyfill',
         ]
     },
     flux: {

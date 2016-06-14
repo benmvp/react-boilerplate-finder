@@ -6,7 +6,7 @@ export const suckPackages = (categories) => (
         .pairs()
 
         // convert the array of pairs to an array of package names (nested array)
-        .map(([, catInfo]) => ([catInfo.basePackage, ...catInfo.packages]))
+        .map(([, {basePackage, packages}]) => ([basePackage, ...packages]))
 
         // flatten down the nested array of names to a flat list of name
         .flatten()
