@@ -9,10 +9,11 @@ _Italics_: Nice-to-have features
 - Get meta data for each package within [categories.js](app/constants/categories.js) and save to [packages.json](data/packages.json) lookup
   - **name**
   - latest version (http://registry.npmjs.org/[lib]/latest)
-- Get dependency information for each repo in [repos.json](data/repos.json) and save to [repos-info.json](data/repos-info.json)
-  - **uniqueId** (github path)
+- Get dependency information for each repo in [boilerplate-repos.json](data/boilerplate-repos.json) and save to [boilerplate-repos-info.json](data/boilerplate-repos-info.json)
+  - **id** (github path)
   - _name_ (from package.json)
   - **description** (from github API)
+  - **url** (from github API)
   - _repo image / profile image_ (from github API)
   - matching dependencies map (package to semver from package.json)
   - num total dependencies (`dependencies` + `devDependencies` from package.json)

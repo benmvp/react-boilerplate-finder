@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-
 import fs from 'fs';
 import path from 'path';
 
@@ -8,8 +7,8 @@ import categories from '../constants/categories';
 
 const PACKAGES_FILE = path.join(__dirname, '../data/packages.json');
 
-// Get meta data for each package within [categories.js](app/constants/categories.js)
-// and save to [packages.json](data/packages.json) lookup
+// Get meta data for each package within `categories`
+// and save to `PACKAGES_FILE` lookup
 
 console.log('Sucking out packages list from categories');
 

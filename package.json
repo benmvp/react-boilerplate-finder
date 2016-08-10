@@ -2,7 +2,8 @@
   "private": true,
   "description": "A simple React app for finding React boilerplates / starter kits",
   "scripts": {
-    "build": "npm run build-packages-lookup",
+    "build": "npm run build-packages-lookup && npm run build-boilerplate-repos-info",
+    "build-boilerplate-repos-info": "babel-node _scripts/build-boilerplate-repos-info",
     "build-packages-lookup": "babel-node _scripts/build-packages-lookup",
     "eslint": "eslint .",
     "lint": "npm run eslint",

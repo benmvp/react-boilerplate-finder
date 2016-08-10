@@ -1,8 +1,9 @@
 export default {
-    react: {
-        label: 'React',
+    reactEnv: {
+        label: 'React Environment',
         packages: [
-            'react'
+            'react-dom',
+            'react-native',
         ]
     },
     babel: {
@@ -31,11 +32,18 @@ export default {
             'browserify',
         ]
     },
+    hot: {
+        label: 'Hot-module reloading',
+        packages: [
+            'react-hot-loader'
+        ]
+    },
     cssUtils: {
         label: 'CSS Utils',
         packages: [
             'postcss',
             'autoprefixer',
+            'sass-loader',
         ],
         multi: true
     },
@@ -50,6 +58,7 @@ export default {
         basePackage: 'eslint',
         packages: [
             'eslint-config-airbnb',
+            'eslint-config-eventbrite',
             'eslint-plugin-react',
             'eslint-plugin-jsx-a11y',
             'eslint-plugin-import',
@@ -72,16 +81,28 @@ export default {
             'reflux'
         ]
     },
+    functional: {
+        label: 'Functional',
+        packages: [
+            'underscore',
+            'lodash',
+            'lazyjs.js',
+            'immutable'
+        ]
+    },
     routing: {
         label: 'Routing',
         packages: [
-            'react-router'
+            'react-router',
+            'uniloc',
         ]
     },
     server: {
         label: 'Isomporpic/Universal',
         packages: [
-            'express'
+            'express',
+            'webpack-dev-server',
+            'serve',
         ]
     },
     testAssertion: {
@@ -95,7 +116,8 @@ export default {
         label: 'Test Framework',
         packages: [
             'mocha',
-            'jest'
+            'jest',
+            'ava',
         ]
     },
     testRunner: {
@@ -110,7 +132,39 @@ export default {
             'enzyme',
             'sinon',
             'react-addons-test-utils',
+            'isparta',
+            'coveralls',
         ],
         multi: true
-    }
+    },
+    fetcb: {
+        label: 'AJAX',
+        packages: [
+            'whatwg-fetch',
+            'isomorphic-fetch',
+            'falcor',
+            'graphql-relay'
+        ],
+        multi: true
+    },
+    animation: {
+        label: 'Animation',
+        packages: [
+            'react-addons-css-transition-group',
+            'react-motion',
+            'react-animate',
+        ]
+    },
+    components: {
+        label: 'Components',
+        packages: [
+            'react-bootstrap',
+            'react-select',
+            'material-ui',
+            'react-foundation',
+            'elemental',
+            'rebass',
+        ],
+        multi: true
+    },
 };
