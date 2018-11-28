@@ -1,5 +1,7 @@
 # React Boilerplate Finder
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/benmvp/react-boilerplate-finder.svg)](https://greenkeeper.io/)
+
 A simple web app for finding React boilerplates / starter kits.
 
 Technologies planned:
